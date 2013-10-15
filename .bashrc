@@ -13,7 +13,9 @@ alias cp="cp -i"                          # confirm before overwriting something
 alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
 alias diff='diff -u'                      # diff unified format
+alias sshpro='eval `ssh-agent`;ssh-add'   # prepare to export shh identity
 
+# arch linux stuff
 alias yu='yaourt -Syu --aur'
 alias yc='yaourt -Sc'
 
@@ -22,7 +24,14 @@ export EDITOR=vim
 export VISUAL=vim
 alias vi=vim
 
-# prompt
+# Node Completion
+shopt -s progcomp
+for f in $(command ls ~/.node-completion); do
+  f="$HOME/.node-completion/$f"
+  test -f "$f" && . "$f"
+done
+
+# prompt for git
 # PS1='[\u@\h \W]\$ '
 function current_branch
 {
