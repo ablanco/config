@@ -14,6 +14,7 @@ alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
 alias diff='diff -u'                      # diff unified format
 alias sshpro='eval `ssh-agent`;ssh-add'   # prepare to export shh identity
+alias ssh='ssh -A'                        # always export the agent
 
 # arch linux stuff
 alias yu='yaourt -Syu --aur'
