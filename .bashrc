@@ -26,11 +26,11 @@ export VISUAL=vim
 alias vi=vim
 
 # Node Completion
-shopt -s progcomp
-for f in $(command ls ~/.node-completion); do
-  f="$HOME/.node-completion/$f"
-  test -f "$f" && . "$f"
-done
+#shopt -s progcomp
+#for f in $(command ls ~/.node-completion); do
+#  f="$HOME/.node-completion/$f"
+#  test -f "$f" && . "$f"
+#done
 
 # prompt for git
 # PS1='[\u@\h \W]\$ '
