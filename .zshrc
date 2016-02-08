@@ -19,3 +19,5 @@ prompt skwp
 export EDITOR=vim
 
 alias ssh='ssh -A'
+alias yu='yaourt -Syu --aur'
+alias yc='yaourt -Sc'
