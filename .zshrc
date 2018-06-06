@@ -17,7 +17,9 @@ promptinit
 prompt skwp
 
 export EDITOR=vim
+export WINEARCH=win32
 
 alias ssh='ssh -A'
-alias yu='yaourt -Syu --aur'
-alias yc='yaourt -Sc'
+alias yu='yay -Syu'
+alias yc='yay -Sc'
+alias git='LANG=en_US git'
