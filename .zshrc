@@ -174,6 +174,9 @@ fi
 alias ssh='ssh -A'
 alias yc='yay -Sc'
 alias git='LANG=en_US git'
+alias git-cleanup-local='LANG=en_US git branch --merged | grep -v master | xargs git branch -D'
+alias git-cleanup-dry='LANG=en_US git branch -r --merged | grep -v master | sed "s/origin\///" | xargs -n 1 echo'
+alias git-cleanup-remote='LANG=en_US git branch -r --merged | grep -v master | sed "s/origin\///" | xargs -n 1 git push --delete origin'
 
 
 ## global aliases (for those who like them) ##
