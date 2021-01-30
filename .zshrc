@@ -115,6 +115,7 @@ ssh-add ~/.ssh/gh_rsa
 
 export LANG=en_US.UTF-8
 export SAM_CLI_TELEMETRY=0  # AWS SAM CLI usage metrics
+export EDITOR='vim'
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
