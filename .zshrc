@@ -89,7 +89,6 @@ plugins=(
     archlinux
     celery
     colorize
-    django
     docker-compose
     docker
     ember-cli
