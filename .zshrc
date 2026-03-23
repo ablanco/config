@@ -108,6 +108,9 @@ source $ZSH/oh-my-zsh.sh
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/gh_rsa
 
+# Set up Node Version Manager
+source /usr/share/nvm/init-nvm.sh
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -137,7 +140,7 @@ export EDITOR='vim'
 
 alias la='ls -lah'
 alias ssh='ssh -A'
-alias yc='yay -c && yay -Sc'
+alias yc='yay -Sc'
 alias git='LANG=en_US git'
 alias git-cleanup-local='LANG=en_US git branch --merged | grep -v master | xargs git branch -D'
 alias git-cleanup-dry='LANG=en_US git branch -r --merged | grep -v master | sed "s/origin\///" | xargs -n 1 echo'
