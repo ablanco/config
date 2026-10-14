@@ -1,0 +1,72 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "openai/gpt-6.1-sol",
+  "providers": {
+    "openai": {
+      "models": {
+        "gpt-6.1-sol": {
+          "settings": {
+            "reasoningEffort": "medium"
+          }
+        }
+      }
+    }
+  },
+  "shell": "/bin/zsh",
+  "plugins": [
+    "superpowers@git+https://github.com/obra/superpowers.git"
+  ],
+  "mcp": {
+    "servers": {
+      "playwright": {
+        "type": "local",
+        "command": [
+          "npx",
+          "-y",
+          "@playwright/mcp@latest"
+        ]
+      }
+    }
+  },
+  "permissions": [
+    { "action": "shell", "resource": "*", "effect": "ask" },
+    { "action": "shell", "resource": "ls *", "effect": "allow" },
+    { "action": "shell", "resource": "stat *", "effect": "allow" },
+    { "action": "shell", "resource": "du *", "effect": "allow" },
+    { "action": "shell", "resource": "which *", "effect": "allow" },
+    { "action": "shell", "resource": "pwd", "effect": "allow" },
+    { "action": "shell", "resource": "git status *", "effect": "allow" },
+    { "action": "shell", "resource": "git diff *", "effect": "allow" },
+    { "action": "shell", "resource": "git log *", "effect": "allow" },
+    { "action": "shell", "resource": "git show *", "effect": "allow" },
+    { "action": "shell", "resource": "git blame *", "effect": "allow" },
+    { "action": "shell", "resource": "npm ls *", "effect": "allow" },
+    { "action": "shell", "resource": "sudo *", "effect": "deny" },
+    { "action": "shell", "resource": "su *", "effect": "deny" },
+    { "action": "read", "resource": "*.env", "effect": "ask" },
+    { "action": "read", "resource": "*.env.*", "effect": "ask" },
+    { "action": "read", "resource": "*.env.example", "effect": "allow" },
+    { "action": "read", "resource": "*.pem", "effect": "ask" },
+    { "action": "read", "resource": "*.key", "effect": "ask" },
+    { "action": "read", "resource": "*.p12", "effect": "ask" },
+    { "action": "read", "resource": "*.pfx", "effect": "ask" },
+    { "action": "read", "resource": "*id_rsa*", "effect": "ask" },
+    { "action": "read", "resource": "*id_ed25519*", "effect": "ask" },
+    { "action": "read", "resource": ".ssh/*", "effect": "ask" },
+    { "action": "read", "resource": ".aws/*", "effect": "ask" },
+    { "action": "read", "resource": ".gnupg/*", "effect": "ask" },
+    { "action": "read", "resource": ".config/gcloud/*", "effect": "ask" },
+    { "action": "read", "resource": "*/.ssh/*", "effect": "ask" },
+    { "action": "read", "resource": "*/.aws/*", "effect": "ask" },
+    { "action": "read", "resource": "*/.gnupg/*", "effect": "ask" },
+    { "action": "read", "resource": "*/.config/gcloud/*", "effect": "ask" },
+    { "action": "edit", "resource": ".ssh/*", "effect": "deny" },
+    { "action": "edit", "resource": ".aws/*", "effect": "deny" },
+    { "action": "edit", "resource": ".gnupg/*", "effect": "deny" },
+    { "action": "edit", "resource": ".config/gcloud/*", "effect": "deny" },
+    { "action": "edit", "resource": "*/.ssh/*", "effect": "deny" },
+    { "action": "edit", "resource": "*/.aws/*", "effect": "deny" },
+    { "action": "edit", "resource": "*/.gnupg/*", "effect": "deny" },
+    { "action": "edit", "resource": "*/.config/gcloud/*", "effect": "deny" }
+  ]
+}
