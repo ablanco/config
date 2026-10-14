@@ -68,5 +68,8 @@
     { "action": "edit", "resource": "*/.aws/*", "effect": "deny" },
     { "action": "edit", "resource": "*/.gnupg/*", "effect": "deny" },
     { "action": "edit", "resource": "*/.config/gcloud/*", "effect": "deny" }
+  ],
+  "plugin": [
+    "@slkiser/opencode-quota@latest"
   ]
 }
