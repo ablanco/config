@@ -1,0 +1,11 @@
+{
+  "codexFastMode": false,
+  "codexStatusPercentage": "remaining",
+  "codexStatusResetCountdown": true,
+  "statuslineDisplay": {
+    "template": "{provider} | {windows}",
+    "window": "{window}: {value}",
+    "countdown": "{window}: {value} ↻ {reset}",
+    "separator": " / "
+  }
+}
