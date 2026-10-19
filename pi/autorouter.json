@@ -1,0 +1,21 @@
+{
+  "defaultModel": "openai-codex/gpt-6.1-sol",
+  "tiers": {
+    "SIMPLE": {
+      "model": "openai-codex/gpt-6-luna",
+      "thinkingLevel": "medium"
+    },
+    "MEDIUM": {
+      "model": "openai-codex/gpt-6-luna",
+      "thinkingLevel": "high"
+    },
+    "COMPLEX": {
+      "model": "openai-codex/gpt-6.1-sol",
+      "thinkingLevel": "medium"
+    },
+    "REASONING": {
+      "model": "openai-codex/gpt-6.1-sol",
+      "thinkingLevel": "high"
+    }
+  }
+}
