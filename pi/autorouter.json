@@ -1,13 +1,16 @@
 {
-  "defaultModel": "openai-codex/gpt-6.1-sol",
+  "defaultModel": {
+    "model": "openai-codex/gpt-6.1-sol",
+    "thinkingLevel": "medium"
+  },
   "tiers": {
     "SIMPLE": {
       "model": "openai-codex/gpt-6-luna",
       "thinkingLevel": "medium"
     },
     "MEDIUM": {
-      "model": "openai-codex/gpt-6-luna",
-      "thinkingLevel": "high"
+      "model": "openai-codex/gpt-6.1-sol",
+      "thinkingLevel": "medium"
     },
     "COMPLEX": {
       "model": "openai-codex/gpt-6.1-sol",
