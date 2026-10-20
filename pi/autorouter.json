@@ -17,5 +17,12 @@
       "model": "openai-codex/gpt-6.1-sol",
       "thinkingLevel": "high"
     }
-  }
+  },
+  "classifierType": "llm",
+  "classifierLLMConfig": {
+    "model": "openai-codex/gpt-6-luna",
+    "classificationRubric": "agentic",
+    "timeoutMs": 3000
+  },
+  "classifierFallback": "heuristic"
 }
