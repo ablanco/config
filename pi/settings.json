@@ -8,6 +8,7 @@
     "npm:@narumitw/pi-usage",
     "npm:pi-web-access",
     "npm:@juicesharp/rpiv-ask-user-question",
-    "npm:@coresofthq/pi-litellm-autorouter"
+    "npm:@coresofthq/pi-litellm-autorouter",
+    "npm:pi-subagents"
   ]
 }
